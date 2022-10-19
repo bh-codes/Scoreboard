@@ -179,6 +179,18 @@ textarea {
        text-align: center;
        color: #9AABD8;
    }
+
+   button#play-again {
+     margin: auto;
+     width: 80px;
+     height: 80px;
+     font-weight: bolder;
+     letter-spacing: 3px;
+     padding: 0 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
