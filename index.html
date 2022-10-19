@@ -41,7 +41,11 @@
           </div>
       </div>
   </div>
+  <div class="replay-container">
+    <button onclick="replay" id="play-again">Play Again</button>
+  </div>
   <script>
+    const replay = document.getElementById("play-again");
     let homeScore = 0;
     let guestScore = 0;
 
@@ -53,31 +57,31 @@
         document.getElementById("home-points-text").innerHTML = newScore;
         // console.log(newScore)
     }
-
     function addTwoHome() {
         let newScore = homeScore += 2;
         document.getElementById("home-points-text").innerHTML = newScore;
     }
-
     function addThreeHome() {
         let newScore = homeScore += 3;
         document.getElementById("home-points-text").innerHTML = newScore;
     }
-
     function addOneGuest() {
         let newScore = guestScore += 1;
         document.getElementById("guest-points-text").innerHTML = newScore;
     }
-
     function addTwoGuest() {
         let newScore = guestScore += 2;
         document.getElementById("guest-points-text").innerHTML = newScore;
     }
-
     function addThreeGuest() {
         let newScore = guestScore += 3;
         document.getElementById("guest-points-text").innerHTML = newScore;
     }
+    replay.addEventListener("click", function () {
+        document.getElementById("home-points-text").innerHTML = 0;
+        document.getElementById("guest-points-text").innerHTML = 0;
+    })
+
 
   </script>
 </body>
