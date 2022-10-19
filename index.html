@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Scrimba | Scoreboard</title>
+
+</head>
+<body>
+  <div class="container">
+      <div>
+          <h3 class="board-title-home">HOME</h3>
+          <div class="home-score">
+          <span id="home-points-text"></span>
+          </div>
+          <div class="button-container">
+          <button onclick="addOneHome()" id="home1" class="add-points-btns-home">+1</button>
+          <button onclick="addTwoHome()" id="home2" class="add-points-btns-home">+2</button>
+          <button onclick="addThreeHome()" id="home3" class="add-points-btns-home">+3</button>
+          </div>
+      </div>
+      <div>
+          <h3 class="board-title-home">GUEST</h3>
+          <div class="home-score">
+          <span id="guest-points-text"></span>
+          </div>
+          <div class="button-container">
+          <button onclick="addOneGuest()" id="guest1" class="add-points-btns-home">+1</button>
+          <button onclick="addTwoGuest()" id="guest2" class="add-points-btns-home">+2</button>
+          <button onclick="addThreeGuest()" id="guest3" class="add-points-btns-home">+3</button>
+          </div>
+      </div>
+  </div>
+  <script>
+    let homeScore = 0;
+    let guestScore = 0;
+
+    document.getElementById("home-points-text").textContent = homeScore;
+    document.getElementById("guest-points-text").textContent = guestScore;
+
+    function addOneHome() {
+        let newScore = homeScore += 1;
+        document.getElementById("home-points-text").innerHTML = newScore;
+        // console.log(newScore)
+    }
+
+    function addTwoHome() {
+        let newScore = homeScore += 2;
+        document.getElementById("home-points-text").innerHTML = newScore;
+    }
+
+    function addThreeHome() {
+        let newScore = homeScore += 3;
+        document.getElementById("home-points-text").innerHTML = newScore;
+    }
+
+    function addOneGuest() {
+        let newScore = guestScore += 1;
+        document.getElementById("guest-points-text").innerHTML = newScore;
+    }
+
+    function addTwoGuest() {
+        let newScore = guestScore += 2;
+        document.getElementById("guest-points-text").innerHTML = newScore;
+    }
+
+    function addThreeGuest() {
+        let newScore = guestScore += 3;
+        document.getElementById("guest-points-text").innerHTML = newScore;
+    }
+
+  </script>
+</body>
+</html>
