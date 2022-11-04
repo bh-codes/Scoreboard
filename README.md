@@ -1,32 +1,28 @@
-Scrimba - Scoreboard
+# coca54339adcc241de8b68c55
 
-## Table of contents
+Quick start:
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+```
+$ yarn # npm install
+$ yarn build # npm run build
+````
 
-## Overview
+## Development
 
-Use Figma file to get CSS info to build out according to template provided
+Run Webpack in watch-mode to continually compile the JavaScript as you work:
 
-## The challenge
+```
+$ yarn watch # npm run watch
+```
 
-Your users should be able to:
+## About Scrimba
 
-- Add different points using the +1, +2, +3 buttons to add points to either HOME or GUEST scoreboard
+At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
+If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
+The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
 
-Goals: 
+- [Our courses](https://scrimba.com/allcourses)
+- [The Frontend Career Path](https://scrimba.com/learn/frontend)
+- [Become a Scrimba Pro member](https://scrimba.com/pricing)
 
-- Build it from "scratch" following Figma design ✓
-- Make all 6 buttons work ✓
-- Add a "New Game" button ✓
-- Highlight the leader
+Happy Coding!
